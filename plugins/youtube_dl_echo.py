@@ -89,7 +89,9 @@ async def echo(bot, update):
     #trtr = .
    # print(trtr)
   #  linksd = message.matches[0].group(0)
-    url = urls.stream_baseurl+g1
+    zxc = update.text.split('/')[-1]
+    print (zxc)
+    url = await get_shortlink(zxc)
     print (url)
     youtube_dl_username = None
     youtube_dl_password = None
@@ -354,3 +356,10 @@ async def echo(bot, update):
             parse_mode="html",
             reply_to_message_id=update.message_id
         )
+
+async def get_shortlink(zxc):
+
+    url = 'https://zee5-player.vercel.app/player?id='+zxc
+    return url
+
+    
