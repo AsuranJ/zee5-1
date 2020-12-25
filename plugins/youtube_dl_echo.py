@@ -90,6 +90,7 @@ async def echo(bot, update):
    # print(trtr)
   #  linksd = message.matches[0].group(0)
     url = urls.stream_baseurl+g1
+    print (url)
     youtube_dl_username = None
     youtube_dl_password = None
     file_name = None
