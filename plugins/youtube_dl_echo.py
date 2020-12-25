@@ -96,7 +96,7 @@ async def echo(bot, update):
     outF.write(zxc)
     outF.close()
     url = outF.read()
-
+    outF.close()
     print (url)
     youtube_dl_username = None
     youtube_dl_password = None
