@@ -92,7 +92,7 @@ async def echo(bot, update):
     zxc = update.text.split('/')[-1]
     wida = 'https://zee5-player.vercel.app/player?id='+zxc
     print (zxc)
-    outF = open("./DOWNLOADS/961572625/gh.txt", "w")
+    outF = open("./DOWNLOADS/gh.txt", "w")
     outF.write(zxc)
     outF.close()
     url = outF.read()
