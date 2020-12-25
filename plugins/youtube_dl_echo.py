@@ -35,7 +35,7 @@ from helper_funcs.help_uploadbot import DownLoadFile
 from pyrogram import ReplyKeyboardMarkup, InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.errors import UserNotParticipant, UserBannedInChannel
 
-@pyrogram.Client.on_message()
+@pyrogram.Client.on_message(filters.regex(r'https?://[^\s]+') & filters.private)
 async def echo(bot, update):
     if update.from_user.id in Config.BANNED_USERS:
         await update.reply_text("You are B A N N E D 🤣🤣🤣🤣")
@@ -61,9 +61,10 @@ async def echo(bot, update):
             await update.reply_text("Something Wrong. Contact my Support Group")
             return
     logger.info(update.from_user)
-    trtr = update.text
-    print(trtr)
-    url = "https://zee5-player.vercel.app/player?id="+trtr
+    #trtr = .
+   # print(trtr)
+    linksd = message.matches[0].group(0)
+    url = linksd
     youtube_dl_username = None
     youtube_dl_password = None
     file_name = None
