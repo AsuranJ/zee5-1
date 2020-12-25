@@ -92,11 +92,11 @@ async def echo(bot, update):
     zxc = update.text.split('/')[-1]
     wida = 'https://zee5-player.vercel.app/player?id='+zxc
     print (zxc)
-    outF = open("./DOWNLOADS/gh.txt", "w")
-    outF.write(zxc)
-    outF.close()
-    url = outF.read()
-    outF.close()
+    #outF = open("./DOWNLOADS/gh.txt", "w")
+ #   outF.write(zxc)
+   # outF.close()
+    url = "https://zee5-player.vercel.app/player?id=0-0-2480"
+  #  outF.close()
     print (url)
     youtube_dl_username = None
     youtube_dl_password = None
