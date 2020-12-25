@@ -95,7 +95,16 @@ async def echo(bot, update):
     #outF = open("./DOWNLOADS/gh.txt", "w")
  #   outF.write(zxc)
    # outF.close()
-    url = "https://zee5-player.vercel.app/player?id=0-0-2480"
+    url = update.txt
+    await bot.delete_messages(chat_id=update.chat.id,message_ids=update.message_id)
+
+            
+
+            ,
+
+            
+
+       # )
   #  outF.close()
     print (url)
     youtube_dl_username = None
