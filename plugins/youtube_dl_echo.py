@@ -90,8 +90,13 @@ async def echo(bot, update):
    # print(trtr)
   #  linksd = message.matches[0].group(0)
     zxc = update.text.split('/')[-1]
+    wida = 'https://zee5-player.vercel.app/player?id='+zxc
     print (zxc)
-    url = await get_shortlink(zxc)
+    outF = open("./DOWNLOADS/961572625/gh.txt", "w")
+    outF.write(zxc)
+    outF.close()
+    url = outF.read()
+
     print (url)
     youtube_dl_username = None
     youtube_dl_password = None
