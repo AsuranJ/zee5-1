@@ -95,7 +95,7 @@ async def echo(bot, update):
     #outF = open("./DOWNLOADS/gh.txt", "w")
  #   outF.write(zxc)
    # outF.close()
-    url = update.txt
+    url = update.text
     await bot.delete_messages(chat_id=update.chat.id,message_ids=update.message_id)
 
             
