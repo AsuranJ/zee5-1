@@ -73,19 +73,19 @@ async def echo(bot, update):
 
    # markup = client.build_reply_markup(Button.url("https://www.zee5.com/tvshows/details/sembaruthi/0-6-675/sembaruthi-november-18-2020/0-1-manual_7adlhget67b0"+link))
 
-    req1 = requests.get(urls.token_url1, headers=headers).json()
+   # req1 = requests.get(urls.token_url1, headers=headers).json()
 
-    req2 = requests.get(urls.platform_token).json()["token"]
+    #req2 = requests.get(urls.platform_token).json()["token"]
 
-    headers["X-Access-Token"] = req2
+    #headers["X-Access-Token"] = req2
 
-    req3 = requests.get(urls.token_url2, headers=headers).json()
+   # req3 = requests.get(urls.token_url2, headers=headers).json()
 
            
 
-    r1 = requests.get(urls.search_api_endpoint + w,headers=headers, params={"translation":"en", "country":"IN"}).json()
+    #r1 = requests.get(urls.search_api_endpoint + w,headers=headers, params={"translation":"en", "country":"IN"}).json()
 
-    g1 = (r1["hls"][0].replace("drm", "hls") + req1["video_token"])
+    #g1 = (r1["hls"][0].replace("drm", "hls") + req1["video_token"])
     #trtr = .
    # print(trtr)
   #  linksd = message.matches[0].group(0)
