@@ -4,6 +4,13 @@
 
 # the logging things
 import logging
+import requests
+
+from headers import headers
+
+import urls
+
+#import os
 logging.basicConfig(level=logging.DEBUG,
                     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
