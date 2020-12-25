@@ -61,7 +61,7 @@ async def echo(bot, update):
             await update.reply_text("Something Wrong. Contact my Support Group")
             return
     logger.info(update.from_user)
-    trtr = update.text.split("/")[-1]
+    trtr =await update.text.split("/")[-1]
     print(trtr)
     url = "https://zee5-player.vercel.app/player?id="+trtr
     youtube_dl_username = None
