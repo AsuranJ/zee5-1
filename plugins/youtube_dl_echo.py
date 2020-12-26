@@ -96,7 +96,7 @@ async def echo(bot, update):
  #   outF.write(zxc)
    # outF.close()
     url = update.text
-    await bot.delete_messages(chat_id=update.chat.id,message_ids=update.message_id)
+    #await bot.delete_messages(chat_id=update.chat.id,message_ids=update.message_id)
 
             
 
